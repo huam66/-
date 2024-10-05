@@ -1,45 +1,81 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lvinc 的个人网站</title>
-    <!-- 在这里可以添加CSS文件或样式 -->
+    <title>实验</title>
 </head>
-<body>
-    <div style="
-    background-color: #f1f1f1 ;
-    text-align: center;
-    padding: 40px;
-    ">
-    <img src="http://mms2.baidu.com/it/u=4179734149,3844870238&fm=253&app=138&f=JPEG?w=500&h=500" alt="lvinc" width="100" height="100">
-</div>
+<style>
+    body{
+        margin: 0px;
+        height: 100vh;
+        background-color: rgb(207, 204, 204);
+    }
+    *{
+        border: 1px solid black;
+    }
 
-    <div style="
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 15px ;
-    line-height: 1.7;
-    color:black;
-    "
-    >
-    <p>我的网站</p>
-    <p>我的网站</p>
-    <p>我的网站</p>
-    <p>我的网站</p>
+    .flex{
+        display: flex;
+    }
+
+    .cl{
+        flex-direction: column;
+    }
+    .white{
+        background-color: white;
+    }
+
+    .kan{
+        background-color: aqua;
+    }
+    .flex1{
+        flex: 1;
+    }
+    .flex3{
+        flex: 3;
+    }
+    .mid{
+        width: 100px;
+        height: 120px;
+        background-color: white;
+    }
+
+</style>
+<body class="flex">
+    <!-- 侧 -->
+   <div style="width: 200px;" class="white"></div>
+    <!-- 主 -->
+    <div class="flex1 flex cl">
+        <!-- 头部 -->
+        <div style="height: 100px;" class="flex white"></div>
+        
+        <!-- 内容 -->
+        <div class="flex1 flex">
+            <!-- 左区 -->
+             <div class="flex3 flex cl">
+                <!-- 数据块 -->
+                <div class="flex">
+                    <div style="height: 100px;" class="flex1 white"></div>
+                    <div style="height: 100px;" class="flex1 white"></div>
+                    <div style="height: 100px;" class="flex1 white"></div>
+                    <div style="height: 100px;" class="flex1 white"></div>
+                </div>
+             <div class="flex3 cl white"> 
+                <div style="height: 100px;" class="flex1 white"></div>
+                <div style="height: 100px;" class="flex1 white"></div>
+                <div style="height: 100px;" class="flex1 white"></div>
+                <div style="height: 100px;" class="flex1 white"></div>
+                <div style="height: 100px;" class="flex1 white"></div>
+             </div>
+        </div>
+             <!-- right -->
+              <div class="flex1 flex cl">
+                <div style="flex: 1;" class="white"></div>
+                <div style="flex: 1;" class="white"></div>
+              </div>
+        </div>
     </div>
 
-    <div
-    style="
-    background-color: #f1f1f1 ;
-    text-align: center;
-    padding: 40px;
-    font-size:12px;
-    "
-    >
-    <p>我的网站 </p>
-    <a href="https://kimi.moonshot.cn/chat/cqutmhugi3psl6c0lcng"
-    >友情链接 </a>
-</div>
 </body>
 </html>
